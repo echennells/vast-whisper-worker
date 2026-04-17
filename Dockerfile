@@ -27,7 +27,7 @@ RUN python3 -m pip install --upgrade pip wheel setuptools
 
 # Keep deps minimal. faster-whisper pulls CTranslate2 + tokenizers + HF hub.
 RUN python3 -m pip install \
-        faster-whisper==1.0.3 \
+        faster-whisper==1.1.1 \
         fastapi==0.115.2 \
         uvicorn[standard]==0.31.1 \
         python-multipart==0.0.12 \
