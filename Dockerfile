@@ -30,7 +30,8 @@ RUN python3 -m pip install \
         faster-whisper==1.0.3 \
         fastapi==0.115.2 \
         uvicorn[standard]==0.31.1 \
-        python-multipart==0.0.12
+        python-multipart==0.0.12 \
+        requests==2.32.3
 
 # Pre-download the model into /models so no network is needed at runtime.
 # Use int8 compute for the prefetch load (CPU); the actual runtime will load
