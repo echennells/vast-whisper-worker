@@ -31,7 +31,8 @@ RUN python3 -m pip install \
         fastapi==0.115.2 \
         uvicorn[standard]==0.31.1 \
         python-multipart==0.0.12 \
-        requests==2.32.3
+        requests==2.32.3 \
+        yt-dlp==2025.10.26
 
 # Pre-download the model into /models so no network is needed at runtime.
 # Use int8 compute for the prefetch load (CPU); the actual runtime will load
